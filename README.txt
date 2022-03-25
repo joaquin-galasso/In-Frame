@@ -1,0 +1,2 @@
+Integrantes del grupo:
+Thiago López Alderete / thiagolopezalderete@hotmail.com
