@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Open+Sans:wght@600&display=swap");
+
+body {
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  background-color: #f2e8ce;
+  background-image: url(./Imagenes/web-background.svg);
+  background-attachment: fixed;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/*s1-lg-devices*/
+.header {
+  background-color: #0b1f48;
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+.header img {
+  width: 10vw;
+  height: auto;
+}
+.s1-lg {
+  scroll-snap-align: start;
+  background: url(./Imagenes/s1/nubecitas.svg);
+  background-color: #f2e8ce;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.logo-lg {
+  width: 70vw;
+  height: auto;
+  position: absolute;
+  left: 15%;
+  top: 20%;
+}
+.logo-flecha {
+  position: absolute;
+  top: 55vh;
+  left: 47vw;
+  height: 40vh;
+}
+
+/*s2-lg-devices*/
+.s2-lg {
+  width: 100%;
+  height: 100vh;
+}
+.card-lg {
+  position: relative;
+  width: 85vw;
+  height: 70vh;
+  background-color: white;
+  border-radius: 10px;
+  top: 20%;
+  left: 8%;
+  box-shadow: 5px 5px 25px grey;
+  box-sizing: content-box;
+  z-index: -2;
+}
+.embed-decoracion-lg {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+}
+.embed-video-lg {
+  box-sizing: content-box;
+  width: 500px;
+  height: 350px;
+  margin-top: 50px;
+  padding: 25px;
+  border-radius: 10px;
+  z-index: 2;
+}
+.title-card-lg {
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-size: 50px;
+  padding: 10px;
+  font-family: "Cabin", sans-serif;
+  font-weight: 800;
+}
+.p-card-lg {
+  font-size: 25px;
+  padding: 10px;
+  font-weight: 500;
+}
+.card-deco-lg {
+  position: absolute;
+  right: -5%;
+  top: -13%;
+  width: 140px;
+}
+.card-deco-lg2 {
+  position: absolute;
+  width: 140px;
+  bottom: -20%;
+  left: 40%;
+}
+
+/*s3-lg-device*/
+.card2-lg {
+  width: 400px;
+  height: 550px;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px grey;
+  padding-left: 15px;
+  padding-right: 15px;
+  left: 8%;
+}
+.decoracion-s3 {
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  z-index: -1;
+}
+.img-ilust {
+  width: 70%;
+  height: 100%;
+  margin-left: 10%;
+}
+/*s4-lg-device*/
+
+.personal-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -50vh;
+}
+.personal-card .card-body {
+  background-color: #fff;
+  position: relative;
+  top: 20vw;
+  width: 35vw;
+  height: 28vw;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 5px 5px 25px grey;
+}
+.personal-card .card-body img {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.5s;
+  width: 12vw;
+}
+.personal-card .card-body:hover img {
+  top: 5%;
+}
+.personal-card .card-body .card-content {
+  position: relative;
+  width: 100%;
+  padding-top: 140px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.personal-card .card-body:hover .card-content {
+  bottom: 0%;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
+}
+.personal-card .card-body .card-content h2 {
+  color: #000000;
+  text-transform: uppercase;
+  font-family: "Cabin", sans-serif;
+  font-size: 3vw;
+  line-height: 1em;
+  font-weight: 700;
+}
+.personal-card .card-body .card-content h3 {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  line-height: 1em;
+  font-weight: 700;
+}
+.personal-card .card-body .card-content p {
+  color: #fff;
+}
+.personal-card .card-body .card-content .btn-card {
+  position: relative;
+  color: #fff;
+  background-color: #0b1f48;
+  border: none;
+  display: inline-block;
+  padding: 5px 25px;
+  margin-top: 4vh;
+  font-weight: 700;
+  width: 8vw;
+  border-radius: 25px;
+  font-size: 1.2vw;
+}
+.personal-card .card-body .card-content .btn-card:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.footer {
+  background-color: #0b1f48;
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.footer img {
+  width: 10vw;
+  height: auto;
+}
+@media (min-width: 1536px) and (min-height: 864px) {
+  /*s2*/
+  .embed-video-lg {
+    width: 600px;
+    height: 450px;
+  }
+  .title-card-lg {
+    margin-top: 70px;
+    font-size: 60px;
+  }
+  .p-card-lg {
+    font-size: 30px;
+  }
+  /*s3*/
+  .card2-lg {
+    width: 400px;
+    height: 580px;
+    left: 20%;
+  }
+  /*s4*/
+  .personal-card {
+    top: -40vh;
+  }
+}
+@media (min-width: 1366px) and (min-height: 768px) {
+  /*s4*/
+  .personal-card {
+    top: -38vh;
+  }
+}
+@media (min-width: 1920px) and (min-height: 1080px) {
+  /*s2*/
+  .embed-video-lg {
+    padding-top: 10vh;
+    width: 690px;
+    height: 450px;
+  }
+  .title-card-lg {
+    margin-top: 10vh;
+    font-size: 70px;
+  }
+  .p-card-lg {
+    font-size: 40px;
+    padding-right: 100px;
+  }
+  /*s3*/
+  .card2-lg {
+    width: 580px;
+    height: 750px;
+    left: 15%;
+  }
+}
